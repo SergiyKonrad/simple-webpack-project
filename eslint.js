@@ -1,4 +1,4 @@
-// ESLint configuration using the flat config format.
+// ESLint configuration file (eslint.config.mjs) using the flat config format.
 
 // import js from '@eslint/js'
 // import typescriptEslint from '@typescript-eslint/eslint-plugin'
