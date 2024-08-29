@@ -1,0 +1,1 @@
+(()=>{"use strict";var e={};function o(e){console.log("Hello, ".concat(e,"!"))}e.p="/",o("Webpack User"),console.log("Glory to Ukraine!");const c=e.p+"images/b4ae80ec552682f796d1.png";o("Webpack User");var a=document.createElement("img");a.src=c,a.alt="My Logo",a.className="aligned",document.body.appendChild(a)})();

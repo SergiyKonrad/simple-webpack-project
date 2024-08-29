@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: transparent;
+  color: #000;
+}
+
+img {
+  width: 80px;
+  height: auto;
+}
+
+.aligned {
+  float: right;
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+@font-face{font-family:"Roboto";src:url(/fonts/Roboto-Regular.woff) format("woff");font-weight:normal;font-style:normal}h2{color:#f1f903;text-align:center}h1{color:#3498db;text-align:center}
+body {
+  background-color: #ffffff;
+  color: #1199f5;
+}
+button {
+  background-color: #73c3f9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #42aef7;
+}
+
