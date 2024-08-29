@@ -33,39 +33,35 @@ Ensure you have the following installed:
    ```
 
 2. **Install dependencies**:
-
+ ```bash
 npm install
-
 npm install eslint --save-dev
-
 npm install --save-dev typescript ts-loader
-
 npm install --save-dev less less-loader sass sass-loader
-
 npm install --save-dev webpack-bundle-analyzer eslint-webpack-plugin
-
+```
 ### These commands install:
 
-ESLint:  
-Linter for JavaScript and TypeScript;
+- **ESLint**:  
+  A linter for JavaScript and TypeScript.
 
-TypeScript:  
-Static type-checking and transpilation;
+- **TypeScript**:  
+  Provides static type-checking and transpilation.
 
-ts-loader:  
-A TypeScript loader for Webpack;
+- **ts-loader**:  
+  A TypeScript loader for Webpack.
 
-LESS and SASS:  
-CSS preprocessors;
+- **LESS and SASS**:  
+  CSS preprocessors.
 
-less-loader and sass-loader:  
-Loaders to process LESS and SASS files with Webpack;
+- **less-loader** and **sass-loader**:  
+  Loaders for processing LESS and SASS files with Webpack.
 
-webpack-bundle-analyzer:
-Visualizes the size of Webpack output files;
+- **webpack-bundle-analyzer**:  
+  Visualizes the size of Webpack output files.
 
-eslint-webpack-plugin:  
-Integrates ESLint into the Webpack build process.
+- **eslint-webpack-plugin**:  
+  Integrates ESLint into the Webpack build process.
 
 ## Running the Project
 
@@ -101,17 +97,18 @@ npm run lint
 
 Webpack is configured to handle:
 
--JavaScript/TypeScript:
-Bundling and transpiling (with Babel and TypeScript).
+- **JavaScript/TypeScript**:  
+  Bundling and transpiling with Babel and TypeScript.
 
--CSS/Sass/LESS:
-Processing with Sass and LESS, and extracting into separate CSS files.
+- **CSS/Sass/LESS**:  
+  Processing with Sass and LESS, and extracting into separate CSS files.
 
--Assets:
-Handling images, fonts, and other assets.
+- **Assets**:  
+  Handling images, fonts, and other assets.
 
--Plugins:
-CleanWebpackPlugin for cleaning the dist folder before each build, HtmlWebpackPlugin for generating the index.html, and more.
+- **Plugins**:  
+  Includes CleanWebpackPlugin for cleaning the `dist` folder before each build, HtmlWebpackPlugin for generating the `index.html`, and more.
+
 
 ### ESLint
 
@@ -136,11 +133,12 @@ TypeScript configuration is handled via tsconfig.json, providing static typing a
 
 ## Known Issues
 
--Hot Module Replacement: Ensure that liveReload: true is set in webpack.config.mjs to enable proper live reloading and HMR.
+- **Hot Module Replacement**: Ensure that `liveReload: true` is set in `webpack.config.mjs` to enable proper live reloading and HMR.
 
--MIME Type Errors: Check the configuration of asset handling in Webpack if you encounter MIME type errors.
+- **MIME Type Errors**: Check the configuration of asset handling in Webpack if you encounter MIME type errors.
 
--Build Artifacts: The CleanWebpackPlugin may remove files in the dist/ folder after running the development server. Ensure proper configuration or remove the plugin if needed.
+- **Build Artifacts**: The `CleanWebpackPlugin` may remove files in the `dist/` folder after running the development server. Ensure proper configuration or remove the plugin if needed.
+
 
 ## Contributing
 
@@ -148,4 +146,4 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
