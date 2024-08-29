@@ -30,6 +30,8 @@ Ensure you have the following installed:
    git clone https://github.com/SergiyKonrad/simple-webpack-project.git
    cd simple-webpack-project
 
+   ```
+
 2. **Install dependencies**:
 
 npm install
@@ -47,43 +49,56 @@ npm install --save-dev webpack-bundle-analyzer eslint-webpack-plugin
 ESLint:  
 Linter for JavaScript and TypeScript;
 
-TypeScript:   
+TypeScript:  
 Static type-checking and transpilation;
 
 ts-loader:  
 A TypeScript loader for Webpack;
 
-LESS and SASS:   
+LESS and SASS:  
 CSS preprocessors;
 
 less-loader and sass-loader:  
 Loaders to process LESS and SASS files with Webpack;
 
-webpack-bundle-analyzer: 
+webpack-bundle-analyzer:
 Visualizes the size of Webpack output files;
 
 eslint-webpack-plugin:  
 Integrates ESLint into the Webpack build process.
 
 ## Running the Project
+
 To start the development server with live reloading and HMR:
- ```bash
+
+```bash
 npm start
 ```
+
 This will open the application in your default browser at http://localhost:9000/.
+
 ## Building for Production
+
 To create a production build:
- ```bash
+
+```bash
 npm run build
 ```
+
 The output will be in the dist/ directory, ready to be deployed.
+
 ## Linting
+
 To run ESLint and check for code style issues:
- ```bash
+
+```bash
 npm run lint
 ```
+
 ## Configuration
+
 ### Webpack
+
 Webpack is configured to handle:
 
 -JavaScript/TypeScript:
@@ -95,19 +110,28 @@ Processing with Sass and LESS, and extracting into separate CSS files.
 -Assets:
 Handling images, fonts, and other assets.
 
--Plugins: 
+-Plugins:
 CleanWebpackPlugin for cleaning the dist folder before each build, HtmlWebpackPlugin for generating the index.html, and more.
 
 ### ESLint
+
 ESLint is configured to lint both JavaScript and TypeScript files, ensuring code quality and consistency throughout the project.
 
+- **You can use the new flat config format like
+  ESLint.config.mjs
+  (recommended for new projects).
+  The format eslint.config.mgs is commented and provided in this project!**
+
 ### Babel
+
 Babel is configured to transpile modern JavaScript (ES6+) into a format compatible with older browsers.
 
 ### TypeScript
+
 TypeScript configuration is handled via tsconfig.json, providing static typing and modern JavaScript features in your development.
 
 ## Known Issues
+
 -Hot Module Replacement: Ensure that liveReload: true is set in webpack.config.mjs to enable proper live reloading and HMR.
 
 -MIME Type Errors: Check the configuration of asset handling in Webpack if you encounter MIME type errors.
@@ -115,6 +139,7 @@ TypeScript configuration is handled via tsconfig.json, providing static typing a
 -Build Artifacts: The CleanWebpackPlugin may remove files in the dist/ folder after running the development server. Ensure proper configuration or remove the plugin if needed.
 
 ## Contributing
+
 Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss improvements or bugs.
 
 ## License
