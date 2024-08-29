@@ -117,10 +117,14 @@ CleanWebpackPlugin for cleaning the dist folder before each build, HtmlWebpackPl
 
 ESLint is configured to lint both JavaScript and TypeScript files, ensuring code quality and consistency throughout the project.
 
-- **You can use the new flat config format like
-  ESLint.config.mjs
-  (recommended for new projects).
-  The format eslint.config.mgs is commented and provided in this project!**
+**Note:** ESLint 9.x introduced some changes, including a new flat config format.
+
+- You can use the new flat config format like `eslint.config.mjs` (recommended for new projects).
+- Ensure that this configuration is compatible with the latest ESLint 9.x format.
+- This project uses the traditional `.eslintrc.js` format.
+- Alternatively, you can use the new flat config format introduced in ESLint 9.x.
+- If you prefer the flat config, you would typically create a file named `eslint.config.mjs`.
+- In this project, `eslint.config.mjs` was renamed to `eslint.js` to avoid conflicts, and it's provided as a commented-out example.
 
 ### Babel
 
