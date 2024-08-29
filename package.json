@@ -1,6 +1,7 @@
 {
   "name": "my-webpack-project",
   "version": "1.0.0",
+  "description": "A simple Webpack project setup with support for JavaScript, TypeScript, Sass/SCSS, LESS, and asset management.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -9,9 +10,8 @@
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Sergiy Kondratenko",
+  "license": "MIT",
   "dependencies": {
     "css-loader": "^7.1.2",
     "lodash": "^4.17.21",
@@ -24,7 +24,6 @@
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.9.1",
     "@types/eslint__js": "^8.42.3",
-    "@types/webpack-bundle-analyzer": "^4.7.0",
     "@typescript-eslint/eslint-plugin": "^8.3.0",
     "@typescript-eslint/parser": "^8.3.0",
     "babel-loader": "^9.1.3",
